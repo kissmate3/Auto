@@ -25,11 +25,13 @@ namespace Auto_Client
         public MainWindow()
         {
             InitializeComponent();
+            UpdatePeopleListBox();
         }
 
         private void List_SelectionChanged(object sender, SelectionChangedEventArgs args) {
-
+            
             var selectedMClient = ClientsListBox.SelectedItem as MClient;
+
 
             if (selectedMClient != null)
             {

@@ -12,7 +12,6 @@ namespace Auto_Client.DataProviders
     class MClientDataProvider
     {
         private const string _url = "http://localhost:5000/api/mclient";
-        //sdadsasdasdasdasd
         public static IEnumerable<MClient> MClient()
         {
             using (var client = new HttpClient())
