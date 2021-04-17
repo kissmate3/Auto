@@ -58,6 +58,7 @@ namespace Auto_Client
         private void UpdatePeopleListBox()
         {
             var people = MClientDataProvider.MClient().ToList();
+            
             ClientsListBox.ItemsSource = people;
         }
     }

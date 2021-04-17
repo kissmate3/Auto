@@ -61,6 +61,8 @@ namespace Auto_Server.Controllers
                 mclientToUpdate.LicensePN = mclient.LicensePN;
                 mclientToUpdate.Description = mclient.Description;
                 mclientToUpdate.StartingDate = mclient.StartingDate;
+                mclientToUpdate.Status = mclient.Status;
+
 
                 MClientRepository.StoreMClient(mclients);
                 return Ok();

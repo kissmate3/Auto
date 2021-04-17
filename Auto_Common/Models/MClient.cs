@@ -15,10 +15,11 @@ namespace Auto_Common.Models
         public string LicensePN { get; set; }
         public string Description { get; set; }
         public DateTime StartingDate { get; set; }
+        public string Status { get; set; }
 
         public override string ToString()
         {
-            return $"{FirstName} {LastName} : {CarType} , {LicensePN} , {Description} , {StartingDate.Date}" ;
+            return $"{FirstName} {LastName} : {CarType} , {LicensePN} , {Description} , {StartingDate.Date}, {Status}" ;
         }
     }
 }

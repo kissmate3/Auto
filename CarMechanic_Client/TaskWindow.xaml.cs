@@ -35,7 +35,9 @@ namespace CarMechanic_Client
                 LicensePNTextBox.Text = _mclient.LicensePN;
                 DescriptionTextBox.Text = _mclient.Description;
                 DatePicker.SelectedDate = _mclient.StartingDate;
-                
+                ComboBox.Text = _mclient.Status;
+
+
                 UpdateButton.Visibility = Visibility.Visible;
 
 
@@ -57,7 +59,8 @@ namespace CarMechanic_Client
             _mclient.LicensePN = LicensePNTextBox.Text;
             _mclient.Description = DescriptionTextBox.Text;
             _mclient.StartingDate = DatePicker.SelectedDate.Value;
-            
+            _mclient.Status = ComboBox.Text;
+
 
             TaskDataProvider.UpdateMClient(_mclient);
 
@@ -66,7 +69,7 @@ namespace CarMechanic_Client
             
         }
 
-
+       
     }
 
 }
