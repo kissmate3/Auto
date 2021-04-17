@@ -25,6 +25,7 @@ namespace CarMechanic_Client
         public TaskWindow(MClient mclient)
         {
             InitializeComponent();
+
             if (mclient != null)
             {
                 _mclient = mclient;
