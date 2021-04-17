@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Auto_Client"
         mc:Ignorable="d"
-        Title="Client Data" Height="426" Width="500">
+        Title="Client Data" Height="426" Width="500" Icon="/image/kep.png">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -64,7 +64,7 @@
         </Style>
     </Window.Resources>
     <Grid Background="AliceBlue">
-        
+
 
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
