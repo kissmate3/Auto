@@ -25,6 +25,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
             <Label Grid.Column="0" Grid.Row="0" Content="First name" Margin="10"/>
@@ -45,6 +46,12 @@
             <Label Grid.Column="0" Grid.Row="5" Content="Date" Margin="10"/>
             <DatePicker x:Name="DatePicker" Grid.Column="1" Grid.Row="5" Margin="10"/>
 
+            <Label Grid.Column="0" Grid.Row="6" Content="Status" Margin="10"/>
+            <ComboBox x:Name="ComboBox" Grid.Column="1" Grid.Row="6" Margin="10">
+                <ComboBoxItem IsSelected="True">New work</ComboBoxItem>
+                <ComboBoxItem>In progress</ComboBoxItem>
+                <ComboBoxItem>Done</ComboBoxItem>
+            </ComboBox>
         </Grid>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom">

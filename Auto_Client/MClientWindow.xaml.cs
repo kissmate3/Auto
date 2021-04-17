@@ -37,6 +37,7 @@ namespace Auto_Client
                 LicensePNTextBox.Text = _mclient.LicensePN;
                 DescriptionTextBox.Text = _mclient.Description;
                 DatePicker.SelectedDate = _mclient.StartingDate;
+                ComboBox.Text = _mclient.Status;
 
                 CreateButton.Visibility = Visibility.Collapsed;
                 UpdateButton.Visibility = Visibility.Visible;
@@ -61,7 +62,7 @@ namespace Auto_Client
                 _mclient.CarType = CarTypeTextBox.Text;
                 _mclient.LicensePN = LicensePNTextBox.Text;
                 _mclient.Description = DescriptionTextBox.Text;
-                _mclient.StartingDate = DatePicker.SelectedDate.Value;
+                _mclient.StartingDate = DatePicker.SelectedDate.Value; //DateTime.Now
                 _mclient.Status = "New work";
 
                 MClientDataProvider.CreateMClient(_mclient);
@@ -81,6 +82,7 @@ namespace Auto_Client
                 _mclient.LicensePN = LicensePNTextBox.Text;
                 _mclient.Description = DescriptionTextBox.Text;
                 _mclient.StartingDate = DatePicker.SelectedDate.Value;
+                _mclient.Status = ComboBox.Text;
 
                 MClientDataProvider.UpdateMClient(_mclient);
 
