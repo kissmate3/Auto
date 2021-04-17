@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarMechanic_Client"
         mc:Ignorable="d"
-        Title="Task manager" Height="450" Width="800">
-    <Grid>
+        Title="Task manager" Height="450" Width="800" Icon="/task.png" SizeToContent="Manual" Background="#FF4D37DC">
+    <Grid Background="AliceBlue">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -14,8 +14,8 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Content="Tasks" FontWeight="Bold" Margin="15,15,15,0"/>
-        <ListBox x:Name="CarMechanicListBox"  Grid.Row="1" Margin="15" SelectionMode="Single" SelectionChanged="List_SelectionTaskChanged"/>
+        <Label Grid.Row="0" Content="Tasks" FontWeight="Bold" Margin="15,15,15,0" FontSize="20"/>
+        <ListBox x:Name="CarMechanicListBox"  Grid.Row="1" Margin="15" SelectionMode="Single" SelectionChanged="List_SelectionTaskChanged" Background="Cornsilk"/>
         
     </Grid>
 </Window>

@@ -7,11 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="task.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Auto_Common\Auto_Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="task.png" />
   </ItemGroup>
 
 </Project>

@@ -7,11 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="image\kep.png" />
+    <None Remove="kep.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Auto_Common\Auto_Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\kep.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="kep.png" />
   </ItemGroup>
 
 </Project>

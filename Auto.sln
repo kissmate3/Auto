@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auto_Common", "Auto_Common\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auto_Client", "Auto_Client\Auto_Client.csproj", "{7D0D356E-9967-436C-82BE-A52F8EFFB47C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarMechanic_Client", "CarMechanic_Client\CarMechanic_Client.csproj", "{150F5D2C-A787-456B-8395-22A247A77AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarMechanic_Client", "CarMechanic_Client\CarMechanic_Client.csproj", "{150F5D2C-A787-456B-8395-22A247A77AEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
