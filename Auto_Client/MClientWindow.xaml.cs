@@ -62,6 +62,7 @@ namespace Auto_Client
                 _mclient.LicensePN = LicensePNTextBox.Text;
                 _mclient.Description = DescriptionTextBox.Text;
                 _mclient.StartingDate = DatePicker.SelectedDate.Value;
+                _mclient.Status = "New work";
 
                 MClientDataProvider.CreateMClient(_mclient);
 

@@ -57,7 +57,7 @@ namespace Auto_Client
 
         private void UpdatePeopleListBox()
         {
-            var people = MClientDataProvider.MClient().ToList();
+            var people = MClientDataProvider.MClient().OrderBy(o => o.StartingDate).ToList();
             
             ClientsListBox.ItemsSource = people;
         }

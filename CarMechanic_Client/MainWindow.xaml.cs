@@ -49,7 +49,7 @@ namespace CarMechanic_Client
         }
         private void UpdatePeopleListBox()
         {
-            var people = TaskDataProvider.MClient().ToList();
+            var people = TaskDataProvider.MClient().OrderBy(o => o.StartingDate).ToList();
             CarMechanicListBox.ItemsSource = people;
         }
     }

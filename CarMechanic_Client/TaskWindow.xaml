@@ -48,9 +48,9 @@
 
             <Label Grid.Column="0" Grid.Row="6" Content="Status" Margin="10"/>
             <ComboBox x:Name="ComboBox" Grid.Column="1" Grid.Row="6" Margin="10">
-                <ComboBoxItem>Felvett munka</ComboBoxItem>
-                <ComboBoxItem>Elvégzés alatt</ComboBoxItem>
-                <ComboBoxItem>Befejezett</ComboBoxItem>
+                <ComboBoxItem>New work</ComboBoxItem>
+                <ComboBoxItem>In progress</ComboBoxItem>
+                <ComboBoxItem>Done</ComboBoxItem>
             </ComboBox>
         </Grid>
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom">
