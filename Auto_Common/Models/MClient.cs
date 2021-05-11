@@ -19,7 +19,8 @@ namespace Auto_Common.Models
 
         public override string ToString()
         {
-            return $"{FirstName} {LastName} : {CarType} , {LicensePN} , {Description} , {StartingDate.Date}, {Status}" ;
+            return $"{FirstName} {LastName} : {CarType} , {LicensePN} , {Description} , {StartingDate.Year + ". " + StartingDate.Month + ". " + StartingDate.Day + ".   " + StartingDate.Hour + ":" + StartingDate.Minute + ":" + StartingDate.Second} , {Status}";
+            //return $"{FirstName} {LastName} : {CarType} , {LicensePN} , {Description} , {StartingDate.Date}, {Status}" ;
         }
     }
 }

@@ -62,7 +62,8 @@ namespace Auto_Client
                 _mclient.CarType = CarTypeTextBox.Text;
                 _mclient.LicensePN = LicensePNTextBox.Text;
                 _mclient.Description = DescriptionTextBox.Text;
-                _mclient.StartingDate = DatePicker.SelectedDate.Value; //DateTime.Now
+                _mclient.StartingDate = DateTime.Now;
+                //MessageBox.Show(DateTime.Now.ToString());
                 _mclient.Status = "New work";
 
                 MClientDataProvider.CreateMClient(_mclient);
@@ -74,6 +75,7 @@ namespace Auto_Client
 
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
+
             if (ValidateMclient())
             {
                 _mclient.FirstName = FirstNameTextBox.Text;
@@ -81,7 +83,7 @@ namespace Auto_Client
                 _mclient.CarType = CarTypeTextBox.Text;
                 _mclient.LicensePN = LicensePNTextBox.Text;
                 _mclient.Description = DescriptionTextBox.Text;
-                _mclient.StartingDate = DatePicker.SelectedDate.Value;
+                //_mclient.StartingDate = DatePicker.SelectedDate.Value;
                 _mclient.Status = ComboBox.Text;
 
                 MClientDataProvider.UpdateMClient(_mclient);
@@ -133,12 +135,12 @@ namespace Auto_Client
                 MessageBox.Show("Descriptions should not be empty.");
                 return false;
             }
-
+            /*
             if (!DatePicker.SelectedDate.HasValue)
             {
                 MessageBox.Show("Please select a date.");
                 return false;
-            }
+            }*/
 
             return true;
         }
