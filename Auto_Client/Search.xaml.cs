@@ -23,6 +23,7 @@ namespace Auto_Client
     {
         private readonly MClient _mclient;
         private string _pn;
+        private string _type;
         public Search(object p)
         {
             InitializeComponent();
@@ -38,11 +39,32 @@ namespace Auto_Client
             }
         }
 
+        private void SearchType_Click(object sender, RoutedEventArgs args)
+        {
+            if (ValidateType())
+            {
+                _type = CarType.Text;
+                var aclient = MClientDataProvider.MClient().Where(x => x.CarType == _type).ToList();
+                SearchListBox.ItemsSource = aclient;
+            }
+        }
+
         private bool Validate()
         {
             if (string.IsNullOrEmpty(CarLicensePN.Text))
             {
                 MessageBox.Show(" License PN should not be empty.");
+                return false;
+            }
+
+            return true;
+        }
+
+        private bool ValidateType()
+        {
+            if (string.IsNullOrEmpty(CarType.Text))
+            {
+                MessageBox.Show(" Type should not be empty.");
                 return false;
             }
 

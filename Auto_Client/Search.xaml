@@ -69,11 +69,18 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <ListBox Background="Cornsilk" x:Name="SearchListBox"  Grid.Row="1" Margin="15,15,15,158" SelectionMode="Single" />
+        <ListBox Background="Cornsilk" x:Name="SearchListBox"  Grid.Row="1" Margin="15,15,15,225" SelectionMode="Single" />
 
-        <Label Grid.Row="1" Content="Search by License PN" Margin="15,290,615,109" FontWeight="Bold"/>
-        <TextBox x:Name="CarLicensePN" Grid.Row="2" Margin="213,290,413,109" Background="Cornsilk"/>
-        <Button Style="{DynamicResource SearchStyle}"  Grid.Row="2" Content="Search" Width="100" HorizontalAlignment="Right" Margin="0,290,279,109" Click="SearchPN_Click" Height="35" Background="DodgerBlue"
+        <Label Grid.Row="1" Content="Search by License PN" Margin="15,230,615,169" FontWeight="Bold"/>
+        <TextBox x:Name="CarLicensePN" Grid.Row="1" Margin="185,234,441,174" Background="Cornsilk"/>
+        <Button Style="{DynamicResource SearchStyle}"  Grid.Row="1" Content="Search" Width="100" HorizontalAlignment="Right" Margin="0,230,300,169" Click="SearchPN_Click" Height="35" Background="DodgerBlue"
                 Foreground="White" FontWeight="Bold" />
+
+
+        <Label Grid.Row="1" Content="Search by Type" Margin="15,285,615,114" FontWeight="Bold"/>
+        <TextBox x:Name="CarType" Grid.Row="1" Margin="185,290,441,118" Background="Cornsilk"/>
+        <Button Style="{DynamicResource SearchStyle}"  Grid.Row="1" Content="Search" Width="100" HorizontalAlignment="Right" Margin="0,290,300,109" Click="SearchType_Click" Height="35" Background="DodgerBlue"
+                Foreground="White" FontWeight="Bold" />
+
     </Grid>
 </Window>
