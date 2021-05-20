@@ -54,6 +54,12 @@ namespace Auto_Client
             }
         }
 
+        private void Search_Click(object sender, RoutedEventArgs args) {
+
+            var window = new Search(null);
+            window.ShowDialog();
+        }
+
 
         private void UpdatePeopleListBox()
         {
