@@ -35,7 +35,7 @@ namespace CarMechanic_Client
                 CarTypeTextBox.Text = _mclient.CarType;
                 LicensePNTextBox.Text = _mclient.LicensePN;
                 DescriptionTextBox.Text = _mclient.Description;
-                DatePicker.SelectedDate = _mclient.StartingDate;
+                DateTextBox.Text = _mclient.StartingDate.ToString();
                 ComboBox.Text = _mclient.Status;
 
 
@@ -59,7 +59,7 @@ namespace CarMechanic_Client
             _mclient.CarType = CarTypeTextBox.Text;
             _mclient.LicensePN = LicensePNTextBox.Text;
             _mclient.Description = DescriptionTextBox.Text;
-            _mclient.StartingDate = DatePicker.SelectedDate.Value;
+            //mclient.StartingDate = DateTextBox.Text;
             _mclient.Status = ComboBox.Text;
 
 

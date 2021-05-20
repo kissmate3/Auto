@@ -36,7 +36,7 @@ namespace Auto_Client
                 CarTypeTextBox.Text = _mclient.CarType;
                 LicensePNTextBox.Text = _mclient.LicensePN;
                 DescriptionTextBox.Text = _mclient.Description;
-                DatePicker.SelectedDate = _mclient.StartingDate;
+                //DatePicker.SelectedDate = _mclient.StartingDate;
                 ComboBox.Text = _mclient.Status;
 
                 CreateButton.Visibility = Visibility.Collapsed;

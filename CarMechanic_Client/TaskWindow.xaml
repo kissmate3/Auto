@@ -101,7 +101,7 @@
             <TextBox x:Name="DescriptionTextBox" Grid.Column="1" Grid.Row="4" Margin="10" IsReadOnly="True" Background="Cornsilk"/>
 
             <Label Grid.Column="0" Grid.Row="5" Content="Date" Margin="10" FontWeight="Bold"/>
-            <DatePicker x:Name="DatePicker" Grid.Column="1" Grid.Row="5" Margin="10" SelectedDateFormat="Long" IsTodayHighlighted="True" FirstDayOfWeek="Monday" Background="Cornsilk"/>
+            <TextBox x:Name="DateTextBox" Grid.Column="1" Grid.Row="5" Margin="10" IsReadOnly="True" Background="Cornsilk"/>
 
             <Label Grid.Column="0" Grid.Row="6" Content="Status" Margin="10" FontWeight="Bold"/>
             <ComboBox x:Name="ComboBox" Grid.Column="1" Grid.Row="6" Margin="10">
