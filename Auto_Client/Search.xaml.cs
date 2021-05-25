@@ -21,7 +21,7 @@ namespace Auto_Client
     /// </summary>
     public partial class Search : Window
     {
-        private readonly MClient _mclient;
+        //private readonly MClient _mclient;
         private string _pn;
         private string _type;
         public Search(object p)
