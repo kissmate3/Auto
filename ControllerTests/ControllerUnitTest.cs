@@ -14,12 +14,39 @@ namespace ControllerTests
         [Fact]
         public void GetMclient_WithValidArgument_ClientListNotEmpty()
         {
-            //
+            // Arrange
             var aclient = MClientRepository.GetMClients().ToList();
 
             //Assert
             Assert.NotEmpty(aclient);
-
         }
+
+        [Fact]
+        public void Getid()
+        {
+            // Arrange
+            var id = 1;
+
+            // Act
+            var clients = MClientRepository.GetMClients();
+            var client = clients.FirstOrDefault(x => x.Id == id);
+
+            // Assert
+            Assert.Null(client);
+        }
+
+        [Fact]
+        public void Getid2()
+        {
+            // Arrange
+            var controller = new MClientController();
+
+            // Act
+            var response = controller.Get(5);
+
+            // Assert
+            Assert.NotNull(response);
+        }
+
     }
 }
