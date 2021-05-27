@@ -59,7 +59,6 @@ namespace CarMechanic_Client
             _mclient.CarType = CarTypeTextBox.Text;
             _mclient.LicensePN = LicensePNTextBox.Text;
             _mclient.Description = DescriptionTextBox.Text;
-            //mclient.StartingDate = DateTextBox.Text;
             _mclient.Status = ComboBox.Text;
 
 

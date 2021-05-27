@@ -22,7 +22,7 @@ namespace ControllerTests
         }
 
         [Fact]
-        public void Getid()
+        public void Get_WithInvalidId_ClientIsNull()
         {
             // Arrange
             var id = 1;
@@ -36,7 +36,7 @@ namespace ControllerTests
         }
 
         [Fact]
-        public void Getid2()
+        public void Get_WithValidId_ClientIsNotNull()
         {
             // Arrange
             var controller = new MClientController();
